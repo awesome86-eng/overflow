@@ -5,48 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#79C72B"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="247"
-        android:layout_height="243"
-        android:layout_marginTop="68dp"
+        android:layout_width="247dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/overflow_basket_white" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:background="#E5E5E5"
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:drawable/edit_text"
         android:ems="10"
-        android:hint="📧 Email ID"
-        android:inputType="textPersonName"
+        android:hint="Enter your Email Address"
+        android:inputType="textEmailAddress"
         android:singleLine="true"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="#E5E5E5"
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/edit_text"
         android:ems="10"
-        android:hint="🔒 Password"
-        android:inputType="textPersonName"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
         android:singleLine="true"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#E5E5E5"
+        android:text="Log in"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
