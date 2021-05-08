@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="247dp"
         android:layout_height="243dp"
         android:layout_marginTop="72dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/overflow_basket_white" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/EmailEntryBox"
         android:layout_width="290dp"
         android:layout_height="50dp"
         android:layout_marginTop="56dp"
@@ -28,13 +28,13 @@
         android:inputType="textEmailAddress"
         android:singleLine="true"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
         app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/PasswordEntryBox"
         android:layout_width="290dp"
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
@@ -44,22 +44,58 @@
         android:inputType="textPassword"
         android:singleLine="true"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/EmailEntryBox"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintStart_toStartOf="@+id/EmailEntryBox"
+        app:layout_constraintTop_toBottomOf="@+id/EmailEntryBox" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/LoginBtn"
         android:layout_width="290dp"
         android:layout_height="45dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#E5E5E5"
         android:text="Log in"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordEntryBox"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/PasswordEntryBox"
+        app:layout_constraintTop_toBottomOf="@+id/ForgotPassword" />
+
+    <CheckBox
+        android:id="@+id/RememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Remember me"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordEntryBox"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toStartOf="@+id/PasswordEntryBox"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordEntryBox" />
+
+    <TextView
+        android:id="@+id/ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Forgot password?"
+        android:textColor="#0067C7"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordEntryBox"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordEntryBox" />
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Sign up"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/LoginBtn"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/LoginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
