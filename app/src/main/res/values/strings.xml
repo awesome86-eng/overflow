@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Overflow</string>
+
+    <string-array name="accountTypes">
+        <item>Farmer</item>
+        <item>Shopper</item>
+    </string-array>
 </resources>
