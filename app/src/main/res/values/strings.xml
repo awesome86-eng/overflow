@@ -2,6 +2,7 @@
     <string name="app_name">Overflow</string>
 
     <string-array name="accountTypes">
+        <item>Choose your account type</item>
         <item>Farmer</item>
         <item>Shopper</item>
     </string-array>
