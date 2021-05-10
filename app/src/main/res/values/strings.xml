@@ -16,7 +16,6 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_profile">My Account</string>
-    <string name="menu_location">Locations</string>
+    <string name="menu_location">Pick up</string>
     <string name="menu_cart">View Cart</string>
-    <string name="menu_settings">Settings</string>
 </resources>

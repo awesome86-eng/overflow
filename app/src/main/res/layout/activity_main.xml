@@ -69,6 +69,8 @@
         android:layout_marginTop="12dp"
         android:backgroundTint="#FFFFFF"
         android:text="Remember me"
+        android:textColorHighlight="#E5E5E5"
+        android:textColorLink="#E5E5E5"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/PasswordEntryBox"
         app:layout_constraintHorizontal_bias="0.0"
