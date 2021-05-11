@@ -15,8 +15,11 @@ import com.google.android.material.navigation.NavigationView;
 
 public class HomeScreen extends AppCompatActivity {
 
+
+    //vars
     private AppBarConfiguration mAppBarConfiguration;
     private HomeScreenActivityBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +41,9 @@ public class HomeScreen extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home_screen);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
