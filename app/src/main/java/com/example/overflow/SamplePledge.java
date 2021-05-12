@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.overflow.ui.cart.CartFragment;
 
-public class sample_pledge extends AppCompatActivity {
+public class SamplePledge extends AppCompatActivity {
     //vars
     public Button add2Cart;
 
@@ -24,7 +24,7 @@ public class sample_pledge extends AppCompatActivity {
         add2Cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(sample_pledge.this, CartFragment.class);
+                Intent intent = new Intent(SamplePledge.this, CartFragment.class);
                 startActivity(intent);
             }
         });
