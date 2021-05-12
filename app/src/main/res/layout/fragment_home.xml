@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
         android:fontFamily="@font/roboto"
         android:text="Today's Deals"
         android:textAlignment="textStart"
@@ -23,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="159dp"
         android:layout_marginTop="10dp">
-        
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,10 +38,11 @@
                 android:src="@drawable/banana" />
 
             <ImageView
+                android:id="@+id/todayBroccoli"
                 android:layout_width="145dp"
                 android:layout_height="159dp"
-                android:layout_marginLeft="10dp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/broccoli" />
 
             <ImageView
@@ -48,7 +50,7 @@
                 android:layout_height="159dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/strawberry" />
+                android:src="@drawable/straw" />
 
             <ImageView
                 android:layout_width="145dp"
@@ -65,6 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
         android:fontFamily="@font/roboto"
         android:text="Popular Deals"
         android:textAlignment="textStart"
@@ -100,7 +103,7 @@
                 android:layout_height="159dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/brocc" />
+                android:src="@drawable/broccoli" />
 
             <ImageView
                 android:layout_width="145dp"

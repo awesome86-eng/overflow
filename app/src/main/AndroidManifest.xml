@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.overflow">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,7 @@
         <activity
             android:name=".HomeScreen"
             android:label="@string/title_activity_home_screen"
-            android:theme="@style/Theme.Overflow.NoActionBar"></activity>
+            android:theme="@style/Theme.Overflow.NoActionBar" />
         <activity android:name=".SignUp" />
         <activity android:name=".MainActivity">
             <intent-filter>
