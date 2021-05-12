@@ -126,7 +126,6 @@
 
         android:layout_marginTop="32dp"
         android:backgroundTint="#79C72B"
-        android:onClick="displayToast"
         android:text="Sign Up"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/accountType"

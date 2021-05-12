@@ -43,6 +43,7 @@
                 android:layout_height="159dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
+                android:clickable="true"
                 android:src="@drawable/broccoli" />
 
             <ImageView

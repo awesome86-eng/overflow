@@ -1,24 +1,19 @@
 package com.example.overflow;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class SignUp extends AppCompatActivity {
     public Button button;
     private CheckBox RembrMe;
-
-    public void displayToast(View v){
-        Toast.makeText(SignUp.this,"Registration Successful",Toast.LENGTH_SHORT).show();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +29,9 @@ public class SignUp extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (SignUp.this, HomeScreen.class);
+                Toast.makeText(v.getContext(), "Registration Successful", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(SignUp.this, HomeScreen.class);
                 startActivity(intent);
             }
         });

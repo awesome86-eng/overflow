@@ -2,10 +2,11 @@ package com.example.overflow;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -19,11 +20,9 @@ import com.google.android.material.navigation.NavigationView;
 
 public class HomeScreen extends AppCompatActivity {
 
-
     //vars
     private AppBarConfiguration mAppBarConfiguration;
     private HomeScreenActivityBinding binding;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +45,17 @@ public class HomeScreen extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+
+        //Click on Today's Deal: Broccoli
+//        ImageView todayBroccoliImg = (ImageView)findViewById(R.id.todayBroccoli);
+//      todayBroccoliImg.setClickable(true);
+//        todayBroccoliImg.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent pledgeIntent = new Intent(HomeScreen.this, sample_pledge.class);
+//                startActivity(pledgeIntent);
+//            }
+//        });
 
     }
 

@@ -33,9 +33,17 @@ public class MainActivity extends AppCompatActivity {
         RembrMe = findViewById(R.id.RememberMe);
 
         //Forgot Password
+        TextView forgotPassword = this.findViewById(R.id.ForgotPassword);
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ForgotPwd.class);
+                startActivity(intent);
+            }
+        });
 
         //Sign Up
-        final TextView signUp = this.findViewById(R.id.SignUp);
+        TextView signUp = this.findViewById(R.id.SignUp);
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
